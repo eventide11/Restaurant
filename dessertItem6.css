@@ -1,0 +1,244 @@
+* {
+    color: beige;
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: 16px;
+}
+@media only screen and (min-width: 320px) {
+    body {
+        height: 2350px;
+        background-attachment: fixed;
+        background-image: url(alsace-architecture-buildings.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    div.wrapperHeader {
+        width: 90%;
+        background: black;
+        color: beige;
+        margin: 0 auto;
+        text-align: center;
+        display: grid;
+        grid-template-columns: repeat(10, 10%);
+        grid-template-rows: 400px;
+    }
+    div.wrapperHeader div.storeLogo {
+        grid-column: 1/5;
+        grid-row: 1/2;
+        background-image: url(backlit2.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    div.wrapperHeader div.storeName {
+        grid-column: 5/-1;
+        grid-row: 1/2;
+        font-family: 'Monoton', cursive;
+        font-size: 2rem;
+        margin-top: 140px;
+    }
+    div.wrapperHeader div.storeQuote {
+        grid-column: 5/-1;
+        grid-row: 1/2;
+        font-family: 'Yellowtail', cursive;
+        font-size: 2rem;
+        margin-top: 210px;
+    }
+
+
+
+
+
+
+
+
+
+
+    div.wrapperNav {
+        width: 90%;
+        font-family: 'Montserrat', sans-serif;
+        position: sticky;
+        left: 5%;
+        top: 0px;
+    }
+    div.wrapperNav ul {
+        list-style: none;
+    }
+    div.wrapperNav ul li {
+        width: 25%;
+        height: 150px;
+        background: #290000;
+        float: left;
+        line-height: 150px;
+        position: relative;
+        text-align: center;
+    }
+    div.wrapperNav ul li.active {
+        background: #004800;
+    }
+    div.wrapperNav ul li a, div.wrapperNav ul li.menuFont {
+        font-size: 2.5rem;
+        text-decoration: none;
+    }
+    div.wrapperNav ul li a:link {
+        color: beige;
+    }
+    div.wrapperNav ul li a:visited {
+        color: beige;
+    }
+    div.wrapperNav ul li:hover {
+        background: #004800;
+    }
+    div.wrapperNav ul li ul li {
+        font-size: 2.5rem;
+        display: none;
+    }
+    div.wrapperNav ul li:hover ul li {
+        display: block;
+        width: 100%;
+    }
+    div.wrapperNav ul li:hover ul li ul {
+        display: none;
+    }
+    div.wrapperNav ul li ul li:hover ul {
+        display: block;
+        width: 100%;
+        left: 100%;
+        position: absolute;
+        top: 0;
+    }
+    div.wrapperNav ul li ul li ul li a {
+        font-size: 1.5rem;
+    }
+    div.wrapperNav ul li ul li ul li.foodFont {
+        font-size: .6rem;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+    div.wrapperMain {
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+    div.wrapperFooter {
+        width: 90%;
+        font-family: 'Montserrat', sans-serif;
+        position: absolute;
+        left: 5%;
+        top: 2350px;
+        z-index: -1;
+        text-align: center;
+        background: rgb(0, 0, 0, .5);
+        display: grid;
+        grid-template-columns: repeat(10, 10%);
+        grid-template-rows: 400px 400px 100px;
+    }
+    div.wrapperFooter div.row {
+        grid-column: 2/10;
+        grid-row: 1/2;
+        display: grid;
+        grid-template-columns: repeat(10, 10%);
+        grid-template-rows: 100px 200px 20px;
+    }
+    div.wrapperFooter div.row p {
+        grid-column: 2/10;
+        grid-row: 1/2;
+        font-size: 3rem;
+        letter-spacing: .1rem;
+        margin-top: 50px;
+    }
+    div.wrapperFooter div.row input {
+        grid-column: 2/10;
+        grid-row: 2/3;
+        width: 50%;
+        height: 100px;
+        border-radius: 50px;
+        background: #008900;
+        color: #290000;
+        font-size: 2rem;
+        letter-spacing: .3rem;
+        margin: 60px auto 0 auto;
+    }
+    div.wrapperFooter div.row input:active {
+        background: #290000;
+        color: #008900;
+    }
+    div.wrapperFooter div.row div.decor {
+        grid-column: 2/10;
+        grid-row: 3/4;
+        width: 50%;
+        border-top: 20px double aliceblue;
+        margin: 30px auto;
+    }
+    div.wrapperFooter div.row2 {
+        grid-column: 2/10;
+        grid-row: 2/3;
+        display: grid;
+        grid-template-columns: repeat(10, 10%);
+        grid-template-rows: 200px 200px;
+    }
+    div.wrapperFooter div.row2 img {
+        width: 100%;
+    }
+    div.wrapperFooter div.row2 img.facebook {
+        grid-column: 2/4;
+        grid-row: 1/2;
+    }
+    div.wrapperFooter div.row2 img.instagram {
+        grid-column: 5/7;
+        grid-row: 1/2;
+    }
+    div.wrapperFooter div.row2 img.kik {
+        grid-column: 8/10;
+        grid-row: 1/2;
+    }
+    div.wrapperFooter div.row2 img.myspace {
+        grid-column: 2/4;
+        grid-row: 2/3;
+        margin-top: 50px;
+    }
+    div.wrapperFooter div.row2 img.pinterest {
+        grid-column: 5/7;
+        grid-row: 2/3;
+        margin-top: 50px;
+    }
+    div.wrapperFooter div.row2 img.youtube {
+        grid-column: 8/10;
+        grid-row: 2/3;
+        margin-top: 50px;
+    }
+    div.wrapperFooter div.footer {
+        grid-column: 1/-1;
+        grid-row: 3/4;
+        font-size: .5rem;
+        line-height: 100px;
+    }
+
+
+
+
+
+
+}
